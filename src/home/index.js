@@ -14,17 +14,21 @@ import {
   FlatList,
   Image,
   NativeModules,
-  Alert
+  Alert,
+  ActivityIndicator,
+  Dimensions
 } from "react-native";
 
 // Create Native Module Variable
 const compressImg = NativeModules.CompressImageManager;
+let { width, height } = Dimensions.get("window");
 
 export default class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      images: []
+      images: [],
+      visible:true
     };
   }
 
@@ -67,7 +71,7 @@ export default class Home extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}> Resized Images! </Text>
+        <Text style={styles.welcome}> Welcome to React Native! </Text>
         <FlatList
           style={{ marginBottom: 20 }}
           data={this.state.images}
@@ -76,6 +80,11 @@ export default class Home extends Component {
           renderItem={this._renderItem}
           numColumns={3}
         />
+         {this.state.images.length===0 ? (
+          <View style={styles.showActivityView}>
+            <ActivityIndicator size="large" color="black" />
+          </View>
+        ) : null}
       </View>
     );
   }
@@ -108,5 +117,16 @@ const styles = StyleSheet.create({
     width: 100,
     height: 100,
     margin: 10
+  },
+  showActivityView: {
+    flex: 1,
+    position: 'absolute',
+    left: 0,
+    top: 0,
+    backgroundColor: 'white',
+    width: width,
+    height: height,
+    justifyContent: "center",
+    alignItems: "center",
   }
 });
