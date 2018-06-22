@@ -5,4 +5,4 @@ I come to accros this issue while developing one of my application using React N
 So i have created Native module with my React Native project. Here  you will get step by step detail how to acheive this.
 
 
-So i have created Native module with my React Native project. [Here] (https://www.logisticinfotech.com/blog/react-native-import-resized-image-photo-gallery) you will get step by step detail how to acheive this.
+So i have created Native module with my React Native project. [Here](https://www.logisticinfotech.com/blog/react-native-import-resized-image-photo-gallery) you will get step by step detail how to acheive this.
