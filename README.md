@@ -1,3 +1,9 @@
+<p align="left">
+  <a href="https://www.logisticinfotech.com/blog/react-native-import-resized-image-photo-gallery"><img alt="npm version" src="https://img.shields.io/badge/npm-v4.0.0.0-green.svg"></a>
+  <a href="https://www.logisticinfotech.com/blog/react-native-import-resized-image-photo-gallery"<><img src="https://img.shields.io/badge/license-MIT-orange.svg"></a>
+</p>
+
+
 ## Introduction
 
 Generally its not a good way to use actually image fetched from Photo Gallery or camera to your mobile application specially while you are dealing with number of images. Because as number of images being fetch with actual size provided by Image-picker or camera will lead to memory issue and that makes app to crash as memory stack grows.
