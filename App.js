@@ -5,19 +5,12 @@
  */
 
 import React, { Component } from 'react';
-import {
-  Platform,
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
+import { Platform, StyleSheet, Text, View } from 'react-native';
 
-import Home from './src/home';
+import Home from './src/home/home';
 
 export default class App extends Component {
-  render() {
-    return (
-      <Home/>
-    );
-  }
+	render() {
+		return <Home />;
+	}
 }
